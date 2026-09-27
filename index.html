@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Autumn Leaves — Hanging Apparatus</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #7fb3e0; }
+  #app { position: fixed; inset: 0; }
+  canvas { display: block; }
+  .hint {
+    position: fixed; left: 50%; bottom: 18px; transform: translateX(-50%);
+    color: rgba(255,255,255,.85); font: 13px/1.5 system-ui, sans-serif;
+    text-align: center; letter-spacing: .04em; pointer-events: none;
+    text-shadow: 0 1px 6px rgba(0,0,0,.35);
+  }
+  .hint b { font-weight: 600; }
+</style>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<div id="app"></div>
+<div class="hint"><b>Drag</b> to look around &nbsp;·&nbsp; <b>Scroll</b> to zoom &nbsp;·&nbsp; <b>1–5</b> leaf type &nbsp;·&nbsp; <b>T</b> cycle time &nbsp;·&nbsp; <b>6–0</b> dawn·morning·noon·afternoon·dusk (<b>T</b> also reaches night)</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
